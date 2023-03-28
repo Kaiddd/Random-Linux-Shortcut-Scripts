@@ -21,7 +21,7 @@ print("\033[1;33 m(Hopefully) \033[1;32 mSuccessfully updated all Python package
 try:
     isPacman = call(['which', 'pacman'])
     if isPacman == 0:
-        call("pacman -Syu", shell=True)
+        call("sudo pacman -Syu", shell=True)
     else:
         print("Could not find pacman... you are likely running this on a non Arch environment, and that's perfectly fine if you're just updating Python packages!")
 except:
