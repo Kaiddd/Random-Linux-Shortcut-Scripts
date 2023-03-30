@@ -5,19 +5,19 @@
 import pkg_resources
 from subprocess import call
 
-print("\033[1;33 mThis tool will attempt to update the following Python scripts, as well as your Arch system:")
+print("This tool will attempt to update the following Python packages, as well as your Arch system:")
 
 tpkgs = [dist.project_name for dist in pkg_resources.working_set]
 pkgs = []
 for pkg in tpkgs:
     if not pkg.startswith("-"):
-        print("\033[1;32 m"+pkg)
+        print(pkg)
         if pkg != "pip":
             pkgs.append(pkg)
 input("Press Enter to continue...\n")
 call("python -m pip install --upgrade pip", shell=True)
 call("pip install --upgrade " + ' '.join(pkgs), shell=True)
-print("\033[1;33 m(Hopefully) \033[1;32 mSuccessfully updated all Python packages! Moving on to pacman -Syu!")
+print("(Hopefully) Successfully updated all Python packages! Moving on to pacman -Syu!")
 try:
     isPacman = call(['which', 'pacman'])
     if isPacman == 0:
