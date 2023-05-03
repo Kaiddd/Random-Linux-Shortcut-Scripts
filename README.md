@@ -1,28 +1,5 @@
-# upkg
-An Arch and pip package updater.
+#Just a random collection of throwaway scripts I've made to save me some typing, probably could've coded these better, fight me!
 
-Made for myself, to save me some typing, as well as to automatically update py packages haha.
-
-***(Don't run as root)***
-
-How to use:
-
-**Method 1** (***Recommended***)
-
-Clone the repository (git clone https://github.com/Kaiddd/upkg.git)
-
-CD into the folder (cd upkg)
-
-Make the script executable (chmod +x upkg.py)
-
-Move it into /usr/bin while removing the extension (mv upkg.py /usr/bin/upkg)
-
-Simply run the command "upkg" to run the script :)
-
-**Method 2**
-
-Clone the repository (git clone https://github.com/Kaiddd/upkg.git)
-
-CD into the folder (cd upkg)
-
-Simply run the Python script like you would any other (python upkg.py)
+upkg - Python package updater, also runs pacman -Syu, lets me quickly update my whole system
+fcopy - Copies a file's contents to your clipboard (Requires xclip)
+targz - Extracts tar gunzip (tar.gz) files, simply runs tar xzvf on the provided file (I didn't want to remember "xzvf" nor did I want to type it every time I had to extact a tgz file...)
