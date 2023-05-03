@@ -1,4 +1,5 @@
 ## Just a random collection of throwaway scripts I've made to save me some typing, probably could've coded these better, fight me!
+#### Simply throw the files into a place on your system path, and run chmod +x on em!
 
 upkg - Python package updater, also runs pacman -Syu, lets me quickly update my whole system
 
