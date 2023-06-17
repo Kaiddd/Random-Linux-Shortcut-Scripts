@@ -5,4 +5,4 @@ fcopy - Copies a file's contents to your clipboard (Requires xclip)
 
 targz - Extracts tar gunzip (tar.gz) files, simply runs tar xzvf on the provided file (I didn't want to remember "xzvf" nor did I want to type it every time I had to extract a tgz file...)
 
-tarxz - Extracts tar bzip2 (tar.xz) files, simply runs tar xjvf on the provided file (I didn't want to remember "xjvf" nor did I want to type it every time I had to extract a txz file...)
+tarxz - Extracts tar xz (tar.xz) files, simply runs tar xjvf on the provided file (I didn't want to remember "xJvf" nor did I want to type it every time I had to extract a txz file...)
