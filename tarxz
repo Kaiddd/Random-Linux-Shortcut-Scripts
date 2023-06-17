@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $# -ne 0 ]; then
+	tar xjvf $1
+else
+	echo "Please pass a file argument..."
+fi
+
